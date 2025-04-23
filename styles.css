@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1a1a2e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.timer-display {
+  font-size: 5rem;
+  margin: 2rem 0;
+  font-weight: 300;
+}
+
+.control-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+
+.control-button:hover {
+  background: #0069d9;
+  transform: translateY(-2px);
+}
+
+.analytics-section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 30px;
+  max-width: 800px;
+  width: 100%;
+  display: none;
+}
+
+.analytics-section.active {
+  display: block;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.analytics-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.stat span {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #4dabf7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .timer-display {
+    font-size: 2rem;
+  }
+  
+  .control-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "hyperfocus-timer",
+  "version": "1.0.0",
+  "description": "A timer application for tracking hyperfocus sessions",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
